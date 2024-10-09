@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario - Progreso de Cursos</title>
+    <link rel="stylesheet" href="../Css/profile.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar Izquierda -->
+        <aside class="sidebar">
+            <div class="profile-info">
+                <img src="../Imagenes/fotoperfil.png" alt="User Avatar" class="avatar">
+                <h3>Odalia Senge</h3>
+                <p>@odaSenge</p>
+            </div>
+
+            <!-- Contenedor de Progreso de Cursos -->
+            <div class="courses-progress-container">
+                <h4>Progreso de Cursos</h4>
+                <div class="course-box">
+                    <span>Desarrollo personal</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                    <span class="progress-percentage">30%</span>
+                </div>
+
+                <div class="course-box">
+                    <span>Desarrollo</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                    <span class="progress-percentage">30%</span>
+                </div>
+
+                <div class="course-box">
+                    <span>Diseño</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                    <span class="progress-percentage">30%</span>
+                </div>
+
+                <div class="course-box">
+                    <span>Fotografía</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                    <span class="progress-percentage">30%</span>
+                </div>
+
+                <div class="course-box">
+                    <span>Informática y Software</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                    <span class="progress-percentage">30%</span>
+                </div>
+
+                <div class="course-box">
+                    <span>Marketing</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                    <span class="progress-percentage">30%</span>
+                </div>
+
+                <div class="course-box">
+                    <span>Música</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                    <span class="progress-percentage">30%</span>
+                </div>
+
+                <div class="course-box">
+                    <span>Negocios</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                    </div>
+                    <span class="progress-percentage">60%</span>
+                </div>
+
+        </aside>
+
+        <!-- Panel Principal -->
+        <div class="main-panel">
+            <header class="header">
+                <h2>Editar Perfil</h2>
+                
+                <!-- Botón Circular con Flecha de Regreso -->
+                <div class="back-button">
+                    <a href="pantalla_principal.html">
+                        <i class="arrow-left"></i>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Contenido Principal -->
+            <section class="content">
+                <!-- Formulario de Edición de Perfil -->
+                <form class="edit-profile-form">
+                    <div class="form-group">
+                        <label for="profile-pic">Foto de Perfil</label>
+                        <input type="file" id="profile-pic">
+                    </div>
+                    <div class="form-group">
+                        <label for="first-name">Nombre</label>
+                        <input type="text" id="first-name" value="Odalia">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Apellidos</label>
+                        <input type="text" id="last-name" value="Senge Loor">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Nombre de Usuario</label>
+                        <input type="text" id="username" value="odaSenge">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" value="OdaSenge@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" value="password123">
+                    </div>
+                    <button type="submit" class="btn save-btn">Guardar Cambios</button>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

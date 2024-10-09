@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fcd4e9;
+    margin: 0;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: hidden; /* Oculta la barra de desplazamiento del body */
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Panel Principal */
+.main-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fa5cb0;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+    height: 90vh;
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+}
+
+/* Ajustes para el scroll */
+.main-panel::-webkit-scrollbar {
+    width: 0; /* Oculta la barra de desplazamiento para navegadores basados en WebKit */
+}
+
+.main-panel {
+    overflow-y: scroll; /* Mantiene la funcionalidad de desplazamiento */
+}
+
+/* Sección de Categorías */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding-bottom: 20px;
+}
+
+/* Caja de Categoría */
+.category-box {
+    background-color: #ffa8d2;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(27, 25, 25, 0.3);
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: auto; /* Permite el desplazamiento dentro de la caja de categoría */
+}
+
+.category-box::-webkit-scrollbar {
+    width: 0; /* Oculta la barra de desplazamiento */
+}
+
+.category-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.category-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.category-box p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Lista de cursos */
+.courses-list {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.course {
+    background-color: #fa5cb0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.course h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.subscribe-btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #f8a9d3;
+}

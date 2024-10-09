@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Cursos</title>
+    <link rel="stylesheet" href="../Css/admin.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-panel">
+            <header class="header">
+                <h2>Panel de Administración</h2>
+            </header>
+
+            <section class="content">
+                <!-- Sección de Cursos -->
+                <div class="option-box">
+                    <h3>Administrar Cursos</h3>
+                    <div class="course-list">
+                        <div class="course-item">
+                            <input type="text" placeholder="Nombre del Curso" required>
+                            <textarea placeholder="Descripción del Curso" required></textarea>
+                            <input type="text" placeholder="Categoría del Curso" required>
+                            <button class="remove-btn">Eliminar</button>
+                        </div>
+                        <div class="course-item">
+                            <input type="text" placeholder="Nombre del Curso" required>
+                            <textarea placeholder="Descripción del Curso" required></textarea>
+                            <input type="text" placeholder="Categoría del Curso" required>
+                            <button class="remove-btn">Eliminar</button>
+                        </div>
+                        <!-- Agregar más cursos aquí -->
+                        <div class="course-item">
+                            <button class="add-course-btn">Agregar Curso</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección de Estudiantes -->
+                <div class="option-box">
+                    <h3>Estudiantes Inscritos</h3>
+                    <div class="student-list">
+                        <div class="student-item">
+                            <span>Estudiante 1</span>
+                            <span>Progreso: 80%</span>
+                            <button class="remove-btn">Eliminar</button>
+                        </div>
+                        <div class="student-item">
+                            <span>Estudiante 2</span>
+                            <span>Progreso: 65%</span>
+                            <button class="remove-btn">Eliminar</button>
+                        </div>
+                        <!-- Agregar más estudiantes aquí -->
+                    </div>
+                </div>
+
+                <!-- Sección de Categorías -->
+                <div class="option-box">
+                    <h3>Administrar Categorías</h3>
+                    <div class="category-list">
+                        <div class="category-item">
+                            <input type="text" placeholder="Nombre de la Categoría" required>
+                            <button class="remove-btn">Eliminar</button>
+                        </div>
+                        <div class="category-item">
+                            <input type="text" placeholder="Nombre de la Categoría" required>
+                            <button class="remove-btn">Eliminar</button>
+                        </div>
+                        <!-- Agregar más categorías aquí -->
+                        <div class="category-item">
+                            <button class="add-category-btn">Agregar Categoría</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7e1ff; /* Fondo rosado claro */
+    margin: 0;
+    color: #333;
+    display: flex;
+    height: 100vh;
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+}
+
+/* Contenedor Principal */
+.main-container {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+}
+
+/* Panel Principal */
+.main-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffb3e6; /* Fondo rosado medio */
+    border-top-left-radius: 30px;
+    padding: 20px;
+    max-width: 1000px; /* Limitar el ancho máximo */
+    box-sizing: border-box; /* Asegurarse de que el padding se incluya en el ancho */
+}
+
+/* Cabecera */
+.header {
+    font-size: 24px;
+    margin-bottom: -30px;
+    margin-top: -35px;
+    text-align: center;
+    color: #4d004d; /* Texto rosado oscuro */
+}
+
+/* Contenido */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Opciones de Administrador */
+.option-box {
+    background-color: #ff99cc; /* Fondo rosado */
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Listas de cursos, estudiantes y categorías */
+.course-list, .student-list, .category-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los elementos */
+    box-sizing: border-box;
+}
+
+/* Elementos de Curso */
+.course-item, .student-item, .category-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaciado entre elementos */
+    background-color: #ff66b2; /* Fondo rosado fuerte */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Campos de texto de los cursos/categorías */
+.course-item input, .category-item input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff4da6; /* Fondo rosado oscuro */
+    color: #fff;
+}
+
+/* Botones */
+.remove-btn, .add-course-btn, .add-category-btn {
+    background-color: #ff66b2; /* Botones rosados fuertes */
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover, .add-course-btn:hover, .add-category-btn:hover {
+    background-color: #ff3385; /* Color más fuerte al pasar el ratón */
+}
